@@ -37,7 +37,8 @@ defmodule Elixir2pdf.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:erlguten, github: "e-matrix/erlguten"},
+      #{:erlguten, github: "e-matrix/erlguten"},
+      {:erlguten, github: "poteto/erlguten"},
       {:ex_doc, github: "elixir-lang/ex_doc", only: :dev},
       {:earmark, github: "pragdave/earmark", override: true, only: :dev}
     ]
@@ -51,11 +52,11 @@ defmodule Elixir2pdf.Mixfile do
 
   defp package do
     [
-      maintainers: ["Jason Kennell"],
+      maintainers: ["Jason Kennell", "Andreas Altendorfer],
       licenses: ["MIT License"],
       links: %{
-                "Github" => "https://github.com/kennellroxco/elixir2pdf",
-                "Changelog" => "https://github.com/kennellroxco/elixir2pdf/blob/master/COLORS.md"
+                "Github" => "https://github.com/e-matrix/elixir2pdf",
+                "Changelog" => "https://github.com/e-matrix/elixir2pdf/blob/master/CHANGELOG.md"
                }
     ]
   end
