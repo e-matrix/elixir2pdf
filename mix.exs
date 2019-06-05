@@ -51,7 +51,7 @@ defmodule Elixir2pdf.Mixfile do
 
   defp package do
     [
-      maintainers: ["Jason Kennell", "Andreas Altendorfer],
+      maintainers: ["Jason Kennell", "Andreas Altendorfer"],
       licenses: ["MIT License"],
       links: %{
                 "Github" => "https://github.com/e-matrix/elixir2pdf",
